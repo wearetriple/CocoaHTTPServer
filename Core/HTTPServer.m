@@ -611,6 +611,8 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_INFO; // | HTTP_LOG_FLAG_TRACE;
 		
 		[[self class] performBonjourBlock:bonjourBlock];
 		
+        [netService setDelegate: nil];
+        
 		netService = nil;
 	}
 }
